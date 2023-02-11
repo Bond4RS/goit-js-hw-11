@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +15,19 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button type="submit" class="search-form--btn">
+        <svg width="20" height="20" fill="currentColor">
+          <use href="./images/icons.svg#icon-search"></use>
+        </svg>
+      </button>
     </form>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+
+    <button type="button" class="load-more is-hidden">Load more...</button>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
